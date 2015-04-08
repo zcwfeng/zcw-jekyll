@@ -1,27 +1,26 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: 张传伟的技术博客
+tagline: http://zcwfeng.github.io/zcw-jekyll/
 ---
-{% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+博主 [David Zhang(风的王子)](http://blog.csdn.net/zcwfengbingdongguke)
 
-## Update Author Attributes
+专注：搜索 架构 算法 云计算 Android : [关于我](https://github.com/zcwfeng)
 
-In `_config.yml` remember to specify your own data:
+## 个人信息
+
+工作年限4年，从事过搜索，手机和web相关工作:（个人博客正在调整中，敬请期待）
     
-    title : My Blog =)
+    title : David 的技术博客
     
     author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+    name : David
+    email : chuanwei.zhang@godinsec.com
+    github : zcwfeng
+    twitter : zcwfeng
 
-The theme should reference these variables whenever needed.
     
 ## Sample Posts
 

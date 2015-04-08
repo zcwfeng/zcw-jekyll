@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Hello World"
+title: "David Zhang 技术博客"
 description: ""
-category: 
+comments : false
+category: lessons
 tags: []
 ---
 {% include JB/setup %}
 
-## 第一页，jekyll的开始
+## 新博客的开始
 
-Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
-dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as "a simple, blog aware, static site generator".
+欢迎关注我的新博客
 
-### 博客文章：[用Jekyll构建基于bootstrap系统](http://blog.fens.me/jekyll-bootstarp-doc/)
+### 博客文章：[用Jekyll构建基于bootstrap系统](http://jekyllbootstrap.com/)
 
 程序员会写程序是基本技能，程序员会写文档是更高的能力。用简单的图形表达架构，用流畅语言描述业务，用专业的文笔写成报告，看似简单的要求，但对于普通的程序员来说都是一种挑战。
 
@@ -20,7 +20,5 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
 Jekyll可以帮助我们标准化文档结构，文档样式，文档过程。剩下就是提升自己的知识基础了。
 
-张传伟，初次使用。
-
-### 欢迎关注。Welcome ！！！！
+博主：张传伟。
 
