@@ -9,6 +9,12 @@ tagline: http://zcwfeng.github.io/zcw-jekyll/
 
 专注：搜索 架构 算法 云计算 Android : [关于我](https://github.com/zcwfeng)
 
+个人主页 : [内置博客](http://zcwfeng.github.io/zcw)
+
+CSDN : [内置博客](http://blog.csdn.net/zcwfengbingdongguke)
+
+ITEYE : [内置博客](http://zcwfeng.iteye.com/)
+
 ## 个人信息
 
 工作年限4年，从事过搜索，手机和web相关工作:（个人博客正在调整中，敬请期待）
@@ -21,7 +27,6 @@ tagline: http://zcwfeng.github.io/zcw-jekyll/
     github : zcwfeng
     twitter : zcwfeng
 
-    
 ## Sample Posts
 
 This blog contains sample posts which help stage pages and blog data.
