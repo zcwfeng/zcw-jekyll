@@ -4,13 +4,129 @@
  <title>风的国度</title>
  <link href="http://zcwfeng.github.io/" rel="self"/>
  <link href="http://zcwfeng.github.io"/>
- <updated>2015-04-10T00:29:18+08:00</updated>
+ <updated>2015-04-26T22:25:34+08:00</updated>
  <id>http://zcwfeng.github.io</id>
  <author>
    <name>张传伟</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>深入浅谈之递归全排列问题</title>
+   <link href="http://zcwfeng.github.io/lessons/2015/04/26/arithmetic-rank1"/>
+   <updated>2015-04-26T00:00:00+08:00</updated>
+   <id>http://zcwfeng.github.io/lessons/2015/04/26/arithmetic-rank1</id>
+   <content type="html">
+&lt;h3 id=&quot;section&quot;&gt;全排列算法描述&lt;/h3&gt;
+&lt;p&gt;首先我们来全排列ABCD这一序列。&lt;/p&gt;
+
+&lt;p&gt;写一个perm方法：perm(int a[],int n,int k)&lt;/p&gt;
+
+&lt;p&gt;a[]:代表要排列的内容用数组存放。&lt;/p&gt;
+
+&lt;p&gt;n：表示要排列几个数。&lt;/p&gt;
+
+&lt;p&gt;k：表示当前排列的状态排列到第几个数。&lt;/p&gt;
+
+&lt;p&gt;逻辑方法不变：每一层都是排列&lt;/p&gt;
+
+&lt;p&gt;规模不断变小：排完第一个位置后排后面（n-1） 个位置，依次递推。&lt;/p&gt;
+
+&lt;p&gt;终止条件：排到最后一个的时候（本次采用的是交换方法所以只需排到n-1就行了）&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;算法demo1
+设数组a[] =｛”A”,”B”,”C”,”D”｝&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;#include&amp;lt;iostream&amp;gt;
+  
+using namespace std;
+  
+void perm(char a[],int n , int k)   {
+
+   if(k==n-1)
+   {//这是终止条件因为是交换所以到n-1步的时候就等于排好了全部了。
+
+       for(int i=0;i&amp;lt;n;i++)
+
+           cout&amp;lt;&amp;lt;a[i]&amp;lt;&amp;lt;&quot; &quot;; cout&amp;lt;&amp;lt;endl;
+
+   }
+
+   else{
+
+       for(int i=k;i&amp;lt;n;++i)
+
+       {
+
+           int temp = a[i];//交换步骤
+
+           a[i] = a[k];
+
+           a[k] = temp;
+
+           perm(a,n,k+1);//确定排完第一个之后排接下去的（n-1）个。
+
+           temp = a[i];//排完后要复原状态
+
+           a[i] = a[k];  a[k] = temp;
+
+       }
+   }      }
+   
+int main(){
+    char a[] = {&#39;A&#39;,&#39;&#39;,&#39;c&#39;,&#39;d&#39;};
+    perm(a,4,0);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;demo2 C语言 【1234】&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+int a[] = {1,2,3,4};
+void perm(int m[],int k,int n)
+{
+
+if(k == n-1)
+{
+	int i;
+	for(i=0;i&amp;lt;n;i++)
+	{
+		printf(&quot;%d &quot;,a[i] );
+	}
+	printf(&quot;%s\n&quot;,&quot;&quot;);
+}
+else
+{
+	int i;
+	for(i=k;i&amp;lt;n;i++) {
+		int temp = m[i] ;
+		m[i]  = m[k] ;
+		m[k]  = temp;
+		perm(a,k+1,n);
+		temp = m[i] ;
+		m[i]  = m[k] ;
+		m[k]  = temp;
+
+	}
+
+}
+
+}
+
+int main(void)
+{
+    perm(a,0,4);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+ </entry>
  
  <entry>
    <title>David Zhang 技术博客</title>

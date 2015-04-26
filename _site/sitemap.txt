@@ -10,5 +10,6 @@ http://zcwfeng.github.io/rss.xml
 http://zcwfeng.github.io/sitemap.txt
 http://zcwfeng.github.io/tags.html
 
+http://zcwfeng.github.io/lessons/2015/04/26/arithmetic-rank1
 http://zcwfeng.github.io/lessons/2015/04/07/hello-world
 http://zcwfeng.github.io/lessons/2011/12/29/jekyll-introduction
